@@ -14,6 +14,4 @@ public class MonsterController : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-         
-
 }
