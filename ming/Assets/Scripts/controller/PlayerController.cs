@@ -9,6 +9,17 @@ public class PlayerController : MonoBehaviour
     Camera viewCamera;
     Vector3 velocity;
     public ProjectileController projectileController;
+    public int Player_Hp = 50;
+
+    public void Damaged(int Damage)
+    {
+        Player_Hp -= Damage;
+
+        if(Player_Hp < 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()

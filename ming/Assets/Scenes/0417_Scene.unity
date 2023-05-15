@@ -143,6 +143,7 @@ MonoBehaviour:
   moveSpeed: 6
   PlayerPivot: {fileID: 1461236664}
   projectileController: {fileID: 905812141}
+  Player_Hp: 50
 --- !u!54 &282173101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -264,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae686d00159d456428a612956ef0fe99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MonsterTemp: {fileID: 7247128805952833101, guid: ab3d7fb85195f7c4ca62410a0a711b11, type: 3}
+  MonsterTemp: {fileID: 367125206598173868, guid: d30b55afffe13d2429ed46f3f8ca2a5b, type: 3}
 --- !u!4 &771101334
 Transform:
   m_ObjectHideFlags: 0

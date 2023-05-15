@@ -174,3 +174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  rotationSpeed: 1
+  bulletPrefab: {fileID: 5720980078221012534, guid: 813b1b4939aeda54ab0c96b3a4358650, type: 3}
+  EnemyPivot: {fileID: 0}
+  fireRate: 1
+  nextFireTime: 0
