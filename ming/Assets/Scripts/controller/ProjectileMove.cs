@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class ProjectileMove : MonoBehaviour
 {
@@ -14,13 +15,13 @@ public class ProjectileMove : MonoBehaviour
     public PROJECTILETYPE projectileType = PROJECTILETYPE.PLAYER;
 
 
-    public void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-
         if (collision.gameObject.tag == "wall1")
         {
             Destroy(this.gameObject);
         }
+
         if (collision.gameObject.tag == "Monster")
         {
             collision.gameObject.GetComponent<MonsterController>().Damanged(1);
@@ -28,7 +29,7 @@ public class ProjectileMove : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.tag == "Wall")
